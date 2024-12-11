@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой НЕреальный сайт</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body class="bd">
+    <header>
+        <img src="https://i.pinimg.com/736x/8c/52/8a/8c528a4029698d3c4a1fd5fc4bea97fb.jpg" alt="" width="110">
+        <div style="flex-grow: 1;"></div>
+        <div>
+            <p>Группа ЭФБО-05-23<br> Стасенко Илья Алексеевич</p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light" id="links">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="gradient-button nav-link" href="./Glavnaya.html">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link gradient-button" href="./Uslugi.html">Услуги</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle gradient-button" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Семестры
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item gradient-button" href="./Pervi_semestr.html" style="margin: 10px;">Первый семестр</a>
+                        <a class="dropdown-item gradient-button" href="./Vtoroy_semestr.html" style="margin: 10px;">Второй семестр</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link gradient-button" href="https://rutube.ru/video/c6cc4d620b1d4338901770a44b3e82f4/">Авторизация</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <aside id="navigation" class="p-3 border-end">
+            <p class="nav-title text-center mb-3">Навигация по странице</p>
+            <ul class="nav-menu list-unstyled">
+                <li class="my-2" id="navigation_Li">
+                    <a href="#theory" class="text-white">Теория</a>
+                </li>
+                <li class="my-2" id="navigation_Li">
+                    <a href="#practice" class="text-white">Практика</a>
+                </li>
+                <li class="my-2" id="navigation_Li">
+                    <a href="#address" class="text-white">Адрес вуза</a>
+                </li>
+                <li class="my-2" id="navigation_Li">
+                    <a href="#workprogramm" class="text-white">Рабочая программа</a>
+                </li>
+            </ul>
+        </aside>
+
+        <section class="semsec container">
+            <h1 class="mt-4">Первый семестр</h1>
+        
+            <h3 id="theory" class="mt-4">Теория</h3>
+            <table class="table table-bordered table-striped table-hover mt-3" style="background-color: #f2f2f2;">
+                <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>Тема</th>
+                        <th>Отметка о посещении</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="directTr">
+                        <td>1</td>
+                        <td>Основы языка HTML</td>
+                        <td><input type="checkbox" id="topic1" checked></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Углубленное изучение HTML</td>
+                        <td><input type="checkbox" id="topic2"></td>
+                    </tr>
+                    <tr class="directTr">
+                        <td>3</td>
+                        <td>Основы работы в CSS</td>
+                        <td><input type="checkbox" id="topic3"></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Адаптивная верстка. Flexbox и Grid Layout</td>
+                        <td><input type="checkbox" id="topic4"></td>
+                    </tr>
+                    <tr class="directTr">
+                        <td>5</td>
+                        <td>Bootstrap - работа с фреймворками</td>
+                        <td><input type="checkbox" id="topic5"></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Основы языка JavaScript</td>
+                        <td><input type="checkbox" id="topic6"></td>
+                    </tr>
+                    <tr class="directTr">
+                        <td>7</td>
+                        <td>Работа с DOM и событиями в JavaScript</td>
+                        <td><input type="checkbox" id="topic7"></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Введение в GitHub и GitHub Pages</td>
+                        <td><input type="checkbox" id="topic8"></td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            <h3 id="practice" class="mt-4">Практика</h3>
+            <table class="table table-bordered table-striped table-hover mt-3" style="background-color: #f2f2f2;">
+                <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>Тема</th>
+                        <th>Отметка о посещении</th>
+                        <th>Выполнение</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="directTr">
+                        <td>1</td>
+                        <td>Основы языка HTML</td>
+                        <td><input type="checkbox" id="practice1-visit" checked></td>
+                        <td><input type="checkbox" id="practice1-complete" checked></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Формы и кнопки в HTML</td>
+                        <td><input type="checkbox" id="practice2-visit"></td>
+                        <td><input type="checkbox" id="practice2-complete"></td>
+                    </tr>
+                    <tr class="directTr">
+                        <td>3</td>
+                        <td>Таблицы и интерактивные элементы HTML</td>
+                        <td><input type="checkbox" id="practice3-visit"></td>
+                        <td><input type="checkbox" id="practice3-complete"></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Основы работы с HTML</td>
+                        <td><input type="checkbox" id="practice4-visit"></td>
+                        <td><input type="checkbox" id="practice4-complete"></td>
+                    </tr>
+                    <tr class="directTr">
+                        <td>5</td>
+                        <td>Работа с классами в CSS</td>
+                        <td><input type="checkbox" id="practice5-visit"></td>
+                        <td><input type="checkbox" id="practice5-complete"></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Работа с сетками и разметками CSS</td>
+                        <td><input type="checkbox" id="practice6-visit"></td>
+                        <td><input type="checkbox" id="practice6-complete"></td>
+                    </tr>
+                    <tr class="directTr">
+                        <td>7</td>
+                        <td>Адаптивная верстка</td>
+                        <td><input type="checkbox" id="practice7-visit"></td>
+                        <td><input type="checkbox" id="practice7-complete"></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Bootstrap</td>
+                        <td><input type="checkbox" id="practice8-visit"></td>
+                        <td><input type="checkbox" id="practice8-complete"></td>
+                    </tr>
+                    <tr class="directTr">
+                        <td>9</td>
+                        <td>Основы языка JavaScript</td>
+                        <td><input type="checkbox" id="practice9-visit"></td>
+                        <td><input type="checkbox" id="practice9-complete"></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Базовые задачи на JS</td>
+                        <td><input type="checkbox" id="practice10-visit"></td>
+                        <td><input type="checkbox" id="practice10-complete"></td>
+                    </tr>
+                    <tr class="directTr">
+                        <td>11</td>
+                        <td>DOM-структура приложений и работа с объектами в языке JS</td>
+                        <td><input type="checkbox" id="practice11-visit"></td>
+                        <td><input type="checkbox" id="practice11-complete"></td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Встраивание скриптов</td>
+                        <td><input type="checkbox" id="practice12-visit"></td>
+                        <td><input type="checkbox" id="practice12-complete"></td>
+                    </tr>
+                    <tr class="directTr">
+                        <td>13</td>
+                        <td>Отладка сценариев</td>
+                        <td><input type="checkbox" id="practice13-visit"></td>
+                        <td><input type="checkbox" id="practice13-complete"></td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Анимации и работа с ними</td>
+                        <td><input type="checkbox" id="practice14-visit"></td>
+                        <td><input type="checkbox" id="practice14-complete"></td>
+                    </tr>
+                    <tr class="directTr">
+                        <td>15</td>
+                        <td>GitHub</td>
+                        <td><input type="checkbox" id="practice15-visit"></td>
+                        <td><input type="checkbox" id="practice15-complete"></td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>Защита проекта</td>
+                        <td><input type="checkbox" id="practice16-visit"></td>
+                        <td><input type="checkbox" id="practice16-complete"></td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            <h1 id="address" class="mt-4">Занятия проходят по адресу: Проспект Вернадского 78</h1>
+            <div class="text-center my-4">
+
+                <iframe src="https://yandex.ru/map-widget/v1/?ll=37.480363%2C55.669965&mode=search&oid=1084832794&ol=biz&z=17.14" width="100%" height="400" frameborder="1" allowfullscreen="true" class="my-3"></iframe>
+            </div>
+        
+            <h1 id="workprogramm" class="mt-4">Рабочая программа</h1>
+            <div class="text-center my-4">
+                <object data="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf" type="application/pdf" width="80%" height="600" class="semfile">
+                    <p>Ваш браузер не поддерживает встроенные PDF-документы. Вы можете <a href="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf">скачать PDF файл</a>.</p>
+                </object>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="fotdiv">
+            <p style="display: flex; min-width: 50px;">© Стасенко Илья Алексеевич, 2024</p>
+            <div>
+                <a href="https://vk.com/site_citxr">
+                    <img src="https://ppz-ural.ru/attachments/Image/prilozheniya-vkontakte.png?1533807009013" alt="Вконтакте" width="55">
+                </a>
+                <a href="https://t.me/site_citxr">
+                    <img src="./Photo/68747470733a2f2f3263682e686b2f732f7372632f333435313639322f31373133323835303235373730302e706e67.png" alt="Телеграм" width="55">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

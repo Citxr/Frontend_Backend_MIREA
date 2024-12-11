@@ -1,0 +1,582 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+html {
+    color: #000000;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    padding: 16px;
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    border: 1px solid black;
+}
+
+footer {
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    border: 1px solid; 
+    padding: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align:center;
+    font-family: Asap;
+}
+
+h2 {
+    font-size: 40px;
+    text-align:center;
+    font-family: "Open Sans";
+}
+
+#avatar{
+    width: 16rem;
+    height: 21rem;
+    float: right; 
+    margin: 0px 0px 20px 20px;
+}
+
+#notif {
+    list-style: none;
+    padding: 0;
+}
+
+#notif li {
+    background: #e7f1ff;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 5px solid #007BFF;
+    color:#024b00;
+}
+
+tr td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.directTr:hover{
+    background-color: rgb(196, 196, 196) !important;
+}
+
+nav{
+    text-align: center; 
+    padding: 10px; 
+    border: 1px solid black; 
+    font-size: 20px;
+}
+
+main {
+    display: flex;
+    padding-right:10px; 
+    border: 1px solid black;
+}
+
+aside {
+    font-size: 20px; 
+    border-right: 2px solid black; 
+    padding-right: 10px;
+}
+
+p {
+    font-family: Muli;
+}
+
+#navigation_Li {
+    background-color: #a094ec;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 5px solid #007BFF;
+    transition: .6s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.363);
+}
+
+#navigation_Li:hover{
+    background-color: #6752ee;
+    border-left: 5px solid #003975;
+}
+
+.cta-button {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.565);
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+.cta-button:hover {
+    background: #0056b3;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.rightimg  {
+    float: right;
+    margin-right: 30px;
+    margin-bottom: 100px;
+}
+
+.style_for_tr{
+    background-color: white;
+}
+
+.style_for_tr:hover{
+    background-color: rgb(120, 120, 120);
+    color: white;
+}
+
+.fotdiv{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 50%;
+}
+
+#zakaz {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.card-title {
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.order-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.order-button:hover {
+    background-color: #0056b3;
+}
+
+
+.bd{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b7e4ff;
+    color: #333;
+}
+
+.gradient-button {
+    display: inline-block;
+    color: white !important;
+    border-radius: 10px;
+    background-color: #a094ec;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.565);
+    transition: .6s;
+    padding: 5px;
+    margin: 0px 10px 0px 10px;
+}
+
+.gradient-button:hover {
+    background-color: #6752ee;
+}
+.gradient-button:active {
+    background-color: #31276e;
+}
+
+input[type=checkbox] {
+    width: 6mm;
+    height: 6mm;
+    border: 0.1mm solid black;
+}
+
+#navigation {
+    display: flex;
+    flex-direction:column;
+    align-items: left;
+    padding: 10px;
+}
+
+.nav-title {
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    flex-direction:column;
+}
+
+#navigation_Li {
+    background-color: #a094ec;
+    margin: 10px;
+    padding: 10px 20px;
+    border-left: 5px solid #007BFF;
+    transition: .6s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.363);
+    text-align: center;
+    flex-grow: 1;
+}
+
+#navigation_Li:hover {
+    background-color: #6752ee;
+    border-left: 5px solid #003975;
+}
+
+#navigation_Li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.mainsec{
+    width: 80%; 
+    padding-left: 10px;
+}
+.semsec{
+    width: 80%;
+    padding: 15px 0px 0px 20px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, auto);  
+    gap: 10px; 
+    padding: 20px;
+    margin-top: 20px; 
+}
+
+.grid-item {
+    background-color: #e7f1ff;
+    padding: 20px;
+    text-align: center;
+    margin: 10px 0;
+    border-left: 5px solid #007BFF;
+    color:#024b00;
+}
+#studentPhoto {
+    transition: transform 0.5s ease;
+}
+#lecturesTable {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+#message {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease, color 1s ease;
+}
+
+#message.visible {
+    opacity: 1;
+    color: green;
+}
+
+.hidden {
+    display: none;
+}
+
+#lecturesTable.visible {
+    display: block;
+    opacity: 1;
+}
+
+#showLectures {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#studentPhoto:hover {
+    transform: rotate(360deg);
+}
+#animatedParagraph {
+    padding: 20px;
+    font-size: 1.2em;
+    background-color: #f0f0f0;
+    transition: background-color 0.5s ease; 
+    cursor: pointer;
+}
+
+#links{
+    padding: 10px 10px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    flex-wrap: wrap; 
+    gap: 10px; 
+}
+
+.dropdown-item{
+    width: 87%;
+}
+
+.modal-content{
+    width: 100%;
+}
+
+.border-bottom{
+    border-bottom: 1px solid #14191f !important;
+}
+
+#navbarNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-title {
+  text-align: center;
+}
+
+.slider-container {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: white;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.page-title {
+    text-align: center;
+}
+  
+.slider-container {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: white;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.prev-button {
+left: 10px;
+}
+
+.next-button {
+right: 10px;
+}
+
+.jsMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    padding: 10px;
+    flex-direction: column;
+}
+
+@media (max-width: 844px) {
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    #navigation_Li {
+        width: 100%;
+        margin: 5px 0;
+    }
+    #navigation{
+        display: none;
+    }
+    .card {
+        width: 100%;
+    }
+    .fotdiv{
+        width: 100%;
+    }
+    .mainsec{
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    #video{
+        width: 22rem;
+        height: 20rem;
+    }
+    main{
+        padding: 0px;
+    }
+    #avatar{
+        margin-right: 50px;
+    }
+    .semsec{
+        width: 100%;
+        padding: 0px;
+    }
+    .gradient-button{
+        margin: 5px;
+    }
+}

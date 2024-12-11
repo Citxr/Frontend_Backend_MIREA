@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой НЕреальный сайт</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="./1.js" defer></script>
+</head>
+<body class="bd">
+
+    <header class="d-flex justify-content-between align-items-center p-3 border-bottom">
+        <img src="https://i.pinimg.com/736x/8c/52/8a/8c528a4029698d3c4a1fd5fc4bea97fb.jpg" alt="Логотип" width="110">
+        <p class="mb-0 text-right">Группа ЭФБО-05-23<br>Стасенко Илья Алексеевич</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light" id="links">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="gradient-button nav-link" href="./Glavnaya.html">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link gradient-button" href="./Uslugi.html">Услуги</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle gradient-button" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Семестры
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item gradient-button" href="./Pervi_semestr.html" style="margin: 10px;">Первый семестр</a>
+                        <a class="dropdown-item gradient-button" href="./Vtoroy_semestr.html" style="margin: 10px;">Второй семестр</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link gradient-button" href="https://rutube.ru/video/c6cc4d620b1d4338901770a44b3e82f4/">Авторизация</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="jsMain">
+        <h1 id="jsHeader">Заголовок</h1>
+        <p id="animatedParagraph">Это тег "P"</p>
+        <img style="width: 20%; height: 20%;" src="https://sun9-40.userapi.com/impg/u8pYtYI2ij7RAlFIbEYFZxN81RPQaR5TkXZ8wA/RNjwVjzYKg4.jpg?size=397x451&quality=96&sign=bf4e497a8955917c0ec2203fa1993d2f&type=album" id = studentPhoto>
+        <button id="second-semester-button">Посмотреть практики второго семестра</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Название практики</th>
+                </tr>
+            </thead>
+            <tbody id="practice-table-body">
+                <tr>
+                    <td>1</td>
+                    <td>Основы языка HTML</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Формы и кнопки в HTML</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Таблицы и интерактивные элементы HTML</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Основы работы с CSS</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Работа с классами в CSS</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Работа с сетками и разметкой в HTML</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Адаптивная вёрстка</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Bootstrap</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Основы языка JavaScript</td>
+                </tr>
+            </tbody>
+        </table>    
+        <button id="showLectures">Показать лекции</button>
+
+        <table id="lecturesTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Лекции</th>
+                </tr>
+            </thead>
+            <tbody id="practice-table-body">
+                <tr>
+                    <td>1</td>
+                    <td>Основы языка HTML</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Формы и кнопки в HTML</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Таблицы и интерактивные элементы HTML</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Основы работы с CSS</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Работа с классами в CSS</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Работа с сетками и разметкой в HTML</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Адаптивная вёрстка</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Bootstrap</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Основы языка JavaScript</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- <h1>Добро пожаловать!</h1>
+        <button class="btn btn-info" onclick="showMessage('Вы нажали на кнопку показать сообщение')">Показать сообщение</button>
+        <button class="btn btn-warning" onclick="logCurrentTime()">Время</button>
+        <button class="btn btn-success" onclick="changeBackgroundColor('lightblue')">Изменить цвет фона</button>
+        <button class="btn btn-success" onclick="resetBackgroundColor()">Вернуть цвет фона</button>
+        <button class="btn btn-warning" onclick="toggleVisibility('.toggle-content')">Переключить видимость</button>
+
+        <div class="toggle-content" style="margin-top: 10px;">
+            <p>Этот текст можно скрывать и показывать.</p>
+        </div>    --->
+        
+        <form id="contactForm" style="margin-top: 20px;">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="phone">Телефон:</label>
+            <input type="text" id="phone" name="phone">
+        
+            <label for="date">Дата:</label>
+            <input type="date" id="date" name="date">
+        
+            <label for="comment">Комментарий:</label>
+            <textarea id="comment" name="comment" required></textarea>
+        
+            <button type="button" id="submitButton">Отправить</button>
+        </form>
+        <div id="message" class="hidden">Форма отправлена!</div>
+        
+    </main>
+
+    <footer>
+        <div class="fotdiv">
+            <p style="display: flex; min-width: 50px;">© Стасенко Илья Алексеевич, 2024</p>
+            <div>
+                <a href="https://vk.com/site_citxr">
+                    <img src="https://ppz-ural.ru/attachments/Image/prilozheniya-vkontakte.png?1533807009013" alt="Вконтакте" width="55">
+                </a>
+                <a href="https://t.me/site_citxr">
+                    <img src="./Photo/68747470733a2f2f3263682e686b2f732f7372632f333435313639322f31373133323835303235373730302e706e67.png" alt="Телеграм" width="55">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./1.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой НЕреальный сайт</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="./1.js" defer></script>
+</head>
+<body class="bd">
+
+    <header class="d-flex justify-content-between align-items-center p-3 border-bottom">
+        <img src="https://i.pinimg.com/736x/8c/52/8a/8c528a4029698d3c4a1fd5fc4bea97fb.jpg" alt="Логотип" width="110">
+        <p class="mb-0 text-right">Группа ЭФБО-05-23<br>Стасенко Илья Алексеевич</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light" id="links">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="gradient-button nav-link" href="./Glavnaya.html">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link gradient-button" href="./Uslugi.html">Услуги</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle gradient-button" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Семестры
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item gradient-button" href="./Pervi_semestr.html" style="margin: 10px;">Первый семестр</a>
+                        <a class="dropdown-item gradient-button" href="./Vtoroy_semestr.html" style="margin: 10px;">Второй семестр</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link gradient-button" href="https://rutube.ru/video/c6cc4d620b1d4338901770a44b3e82f4/">Авторизация</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main>
+        <aside id="navigation" class="p-3 border-end">
+            <p class="nav-title text-center mb-3">Навигация по странице</p>
+            <ul class="nav-menu list-unstyled">
+                <li class="my-2" id="navigation_Li">
+                    <a href="#front" class="text-white">Фронтенд</a>
+                </li>
+                <li class="my-2" id="navigation_Li">
+                    <a href="#back" class="text-white">Бэкенд</a>
+                </li>
+            </ul>
+        </aside>
+
+        <section class="mainsec container">
+            <button class="btn btn-primary reset" data-service="Поменять все" style="margin-left: 10px;">Поменять все</button>
+            <h1>Добро пожаловать на мой сайт</h1>
+            <br>
+            <p style="font-size: 25px;">
+                <img src="https://sun9-40.userapi.com/impg/u8pYtYI2ij7RAlFIbEYFZxN81RPQaR5TkXZ8wA/RNjwVjzYKg4.jpg?size=397x451&quality=96&sign=bf4e497a8955917c0ec2203fa1993d2f&type=album" 
+                alt="Фото"
+                id = "avatar">
+                Меня зовут Стасенко Илья Алексеевич и я начинающий специалист по веб-разработке
+            </p>
+            <br>
+            <h2 class="text-center" id="front">Фронтенд</h2>
+            <p class="fs-5 my-3">Фронтенд (или клиентская часть) — это то, что видит пользователь. Он включает в себя все визуальные элементы веб-сайта или приложения: кнопки, формы, изображения и текст. Фронтенд разработчики используют языки разметки и стилизации, такие как HTML, CSS и JavaScript, чтобы создавать интерактивные и привлекательные интерфейсы. Основная задача фронтенда — обеспечить удобство использования и эстетическую привлекательность.</p>
+            
+            <div class="text-center my-4">
+                <iframe src="https://rutube.ru/play/embed/12c85a75fed469ea71a363abd221eca2" 
+                        class="w-100" 
+                        style="height: 400px;" 
+                        frameborder="0" 
+                        allowfullscreen></iframe>
+            </div>
+            <br>
+            <h2 id="back">Бэкенд</h2>
+            <p class="fs-5 my-3">
+                Бэкенд (или серверная часть) — это "за кулисами" веб-приложения. Он отвечает за обработку данных, управление пользователями и взаимодействие с базами данных. Бэкенд разработчики используют языки программирования, такие как Python, Ruby, Java или PHP, а также фреймворки и базы данных для создания логики приложения. Основная задача бэкенда — обеспечить стабильную работу приложения и безопасность данных.
+            </p>
+        
+            <div class="text-center my-4">
+                <iframe src="https://rutube.ru/play/embed/cb19c323928434127d3d0287075bf4aa" 
+                        class="w-100" 
+                        style="height: 400px;" 
+                        frameborder="0" 
+                        allowfullscreen></iframe>
+            </div>
+            
+            <h1 class="mt-5">Вот что я умею</h1>
+            <div class="grid-container row g-3">
+                <div class="col">
+                    <div class="grid-item p-3 border rounded text-center">
+                        Python
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="grid-item p-3 border rounded text-center">
+                        HTML
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="grid-item p-3 border rounded text-center">
+                        C++
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="grid-item p-3 border rounded text-center">
+                        C#
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="grid-item p-3 border rounded text-center">
+                        JS
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="grid-item p-3 border rounded text-center">
+                        Ruby
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+    </main>
+
+    <footer>
+        <div class="fotdiv">
+            <p style="display: flex; min-width: 50px;">© Стасенко Илья Алексеевич, 2024</p>
+            <div>
+                <a href="https://vk.com/site_citxr">
+                    <img src="https://ppz-ural.ru/attachments/Image/prilozheniya-vkontakte.png?1533807009013" alt="Вконтакте" width="55">
+                </a>
+                <a href="https://t.me/site_citxr">
+                    <img src="./Photo/68747470733a2f2f3263682e686b2f732f7372632f333435313639322f31373133323835303235373730302e706e67.png" alt="Телеграм" width="55">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./1.js"></script>
+</body>
+</html>

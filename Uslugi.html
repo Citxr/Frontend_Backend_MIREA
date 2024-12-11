@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой НЕреальный сайт</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body class="bd">
+    <header>
+        <img src="https://i.pinimg.com/736x/8c/52/8a/8c528a4029698d3c4a1fd5fc4bea97fb.jpg" alt="" width="110">
+        <div style="flex-grow: 1;"></div>
+        <div>
+            <p>Группа ЭФБО-05-23<br> Стасенко Илья Алексеевич</p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light" id="links">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="gradient-button nav-link" href="./Glavnaya.html">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link gradient-button" href="./Uslugi.html">Услуги</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle gradient-button" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Семестры
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item gradient-button" href="./Pervi_semestr.html" style="margin: 10px;">Первый семестр</a>
+                        <a class="dropdown-item gradient-button" href="./Vtoroy_semestr.html" style="margin: 10px;">Второй семестр</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link gradient-button" href="https://rutube.ru/video/c6cc4d620b1d4338901770a44b3e82f4/">Авторизация</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <aside id="navigation" class="p-3 border-end">
+            <p class="nav-title text-center mb-3">Навигация по странице</p>
+            <ul class="nav-menu list-unstyled">
+                <li class="my-2" id="navigation_Li">
+                    <a href="#zakaz" class="text-white">Заказ сайта</a>
+                </li>
+                <li class="my-2" id="navigation_Li">
+                    <a href="#info" class="text-white">Полезная информация</a>
+                </li>
+            </ul>
+        </aside>
+
+    <section class="container py-5">
+        <h1 class="text-center">Разработка веб-приложений</h1>
+        
+        <div class="row" id="zakaz">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="./Photo/pngwing.com.png" class="card-img-top" alt="Интернет-магазин">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Интернет-магазин</h5>
+                        <button class="btn btn-primary order-button" data-service="Интернет-магазин">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="./Photo/pngwing.com.png" class="card-img-top" alt="Блог и новостные портал">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Блог и новостные портал</h5>
+                        <button class="btn btn-primary order-button" data-service="Блог и новостные портал">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="./Photo/pngwing.com.png" class="card-img-top" alt="Корпоративный сайт">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Корпоративный сайт</h5>
+                        <button class="btn btn-primary order-button" data-service="Корпоративный сайт">Купить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitle">Разработка веб-приложения</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Заполните форму, и мы обязательно свяжемся с вами в ближайшее время</p>
+                        <form id="myForm">
+                            <div class="form-group">
+                                <label for="name">Имя:</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Электронная почта:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Телефон:</label>
+                                <input type="text" class="form-control" id="phone" name="phone" placeholder="+7 (____) ____-__-__" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="country">Страна:</label>
+                                <select class="form-control" id="country" name="country" required>
+                                    <option value="">Выберите страну</option>
+                                    <option value="ru">Россия</option>
+                                    <option value="us">США</option>
+                                    <option value="de">Германия</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Дата:</label>
+                                <input type="date" class="form-control" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="comments">Комментарии:</label>
+                                <textarea class="form-control" id="comments" name="comments"></textarea>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="html" required>
+                                <label class="form-check-label" for="html">Согласен на обработку моих персональных данных</label>
+                            </div>
+                            <input type="hidden" id="serviceType" name="serviceType">
+                            <button type="submit" class="btn btn-primary mt-3">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container py-5 text-center" id="info"  style="background-color: white;">
+            <p class="lead" style="font-size: 1.5rem;">
+                Вы находитесь на правильном пути к созданию или расширению вашего онлайн-бизнеса. Наша платформа поможет вам выбрать идеальный сайт, который соответствует вашим требованиям и амбициям. Независимо от того, являетесь ли вы начинающим предпринимателем или опытным бизнесменом, у нас есть что предложить!
+            </p>
+
+            <button class="accordion">Почему стоит купить сайт у нас?</button>
+            <div id="info" class="my-5 panel">
+                <ul class="list-unstyled" id="notif">
+                    <li class="mb-3"><strong>Широкий выбор:</strong> У нас представлено множество готовых сайтов на разных тематиках. Вы сможете выбрать именно тот, который полностью соответствует вашим целям.</li>
+                    <li class="mb-3"><strong>Готовый трафик:</strong> Все наши сайты имеют свой поток посещений, что позволяет вам сразу начать зарабатывать.</li>
+                    <li class="mb-3"><strong>Разнообразие ниш:</strong> От интернет-магазинов до блогов и корпоративных сайтов — найдите то, что вам нужно!</li>
+                    <li class="mb-3"><strong>Легкий процесс покупки:</strong> Мы сделали процесс выбора и покупки максимально удобным и прозрачным.</li>
+                </ul>
+            </div>
+            
+            <button class="accordion">Как выбрать подходящий сайт?</button>
+            <div class="my-5 panel">
+                <ul class="list-unstyled" id="notif">
+                    <li class="mb-3"><strong>Определите свои цели:</strong> Зачем вам сайт? Какую прибыль вы планируете получать? Понимание целей поможет лучше определить выбор.</li>
+                    <li class="mb-3"><strong>Изучите категории:</strong> Просмотрите наши категории, чтобы увидеть, какие сайты уникальны и перспективны.</li>
+                    <li class="mb-3"><strong>Сравните варианты:</strong> Обратите внимание на показатели трафика, доходность и особенности каждого проекта.</li>
+                    <li class="mb-3"><strong>Получите консультацию:</strong> Если у вас остались вопросы, наша команда готова помочь вам сделать правильный выбор.</li>
+                </ul>
+            </div>
+            <button class="accordion">Наши категории сайтов:</button>
+            <div class="my-5 panel">
+                <ul class="list-unstyled" id="notif">
+                    <li class="mb-3"><strong>Интернет-магазины:</strong> Полнофункциональные платформы для электронной коммерции.</li>
+                    <li class="mb-3"><strong>Блоги и новостные порталы:</strong> Для тех, кто хочет делиться своим мнением или новостями.</li>
+                    <li class="mb-3"><strong>Корпоративные сайты:</strong> Идеальны для бизнесов, стремящихся к онлайн-продвижению.</li>
+                    <li class="mb-3"><strong>Оферты и лендинги:</strong> Отличный способ запустить продажи сразу.</li>
+                </ul>
+            </div>
+        
+            <a href="#" class="btn btn-primary btn-lg mt-3">Готовы сделать первый шаг?</a>
+        </div>
+        
+        <h1 class="page-title text-center my-4">Пример работы слайдера</h1>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://i.postimg.cc/nhsTGkLQ/1.png" class="d-block w-100" alt="Белый пушистый кот">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.postimg.cc/cLVh9nKk/2.png" class="d-block w-100" alt="Рыжий пушистый кот в джинсах">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.postimg.cc/4NxWmZkP/3.png" class="d-block w-100" alt="Бело-рыжий пушистый кот">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.postimg.cc/FFZPrzq1/8.png" class="d-block w-100" alt="Золотистый пушистый кот">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.postimg.cc/jd3Zf9Rb/7.png" class="d-block w-100" alt="Золотистый пушистый кот">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    
+        </section>
+    </main>
+
+    <footer>
+        <div class="fotdiv">
+            <p style="display: flex; min-width: 50px;">© Стасенко Илья Алексеевич, 2024</p>
+            <div>
+                <a href="https://vk.com/site_citxr">
+                    <img src="https://ppz-ural.ru/attachments/Image/prilozheniya-vkontakte.png?1533807009013" alt="Вконтакте" width="55">
+                </a>
+                <a href="https://t.me/site_citxr">
+                    <img src="./Photo/68747470733a2f2f3263682e686b2f732f7372632f333435313639322f31373133323835303235373730302e706e67.png" alt="Телеграм" width="55">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var modal = document.getElementById("myModal");
+
+        var buttons = document.querySelectorAll(".order-button");
+
+        var span = document.querySelector(".close");
+
+        buttons.forEach(function(button) {
+            button.onclick = function() {
+                var serviceType = this.getAttribute('data-service');
+                document.getElementById('modalTitle').textContent = serviceType;
+                document.getElementById('serviceType').value = serviceType;
+                modal.style.display = "block";
+            }
+        });
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script> 
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+        
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
